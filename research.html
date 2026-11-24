@@ -54,6 +54,16 @@
         <a class="text-link" href="publications.html#paper-wmode" lang="en">The <i>w</i>-mode instability of strangeon ergostars and its impact on energy extraction</a>
       </div>
     </article>
+    <article class="research-row" id="rotating-star-equilibria">
+      <figure class="research-figure">
+        <img src="assets/equilibrium-surrogate.svg" loading="lazy" width="720" height="360" alt="两阶段研究设想。先用扩散模型辅助 LORENE 迭代，再用神经算子和扩散模型联合预测旋转星的平衡构型。" data-en-alt="Two proposed stages. A diffusion model first assists the LORENE iteration. A neural operator and a diffusion model then act together as a surrogate for the full equilibrium calculation.">
+      </figure>
+      <div class="research-copy">
+        <h2 data-en="Neural Operators and Diffusion Models as Surrogate Solvers for Stellar Equilibria">神经算子与扩散模型代理星体平衡态求解</h2>
+        <p data-en="Step 1. I’ll first train a diffusion model on existing stellar equilibrium solutions and incorporate it into LORENE’s iterative solver. I’ll then test whether it can reduce numerical instabilities when computing equilibria for stars rotating near the Keplerian limit.">第一步，先用已有背景训练一个扩散模型，并引入 LORENE 的迭代过程，看看能否缓解求解近kepler转速的平衡构型时出现的数值不稳定性。</p>
+        <p data-en="Step 2. I’ll explore whether a neural operator and a diffusion model can together serve as a surrogate for the entire LORENE solver and predict stellar equilibrium configurations directly.">第二步，试试能不能用神经算子和扩散模型完整替代 LORENE 的求解过程，直接给出平衡构型。</p>
+      </div>
+    </article>
   </div>
 </div>
   </main>
